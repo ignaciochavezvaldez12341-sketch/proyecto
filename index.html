@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOGOPEDIA</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="page login-page">
+        <div class="intro-visual">
+            <img src="dogo.png" alt="" >
+        </div>
+        <div class="login-box">
+            <h1 class="welcome-title">¡Bienvenido!</h1>
+            
+            <form class="login-form">
+                <div class="input-field">
+                    <input type="email" id="user-input" placeholder="Número de celular o correo">
+                </div>
+                <div class="input-field password-group">
+                    <input type="password" id="pass" placeholder="Contraseña">
+                    <img src="ojo.png" alt="" class="eye-icon">
+                </div>
+                <a href="#" class="forgot-link">¿Olvidaste tu contraseña?</a>
+                <button type="submit" class="btn login-btn">Iniciar sesión</button>
+            </form>
+
+            <div class="social-auth">
+                <span class="divider-text">Continuar con</span>
+                <div class="social-icons">
+                    <button class="social-btn google-btn">
+                        <img src="google.png" alt="">
+                    </button>
+                    <button class="social-btn facebook-btn">
+                        <img src="facebook.png" alt="">
+                    </button>
+                    <button class="social-btn apple-btn">
+                        <img src="apple.png" alt="">
+                    </button>
+                </div>
+                <p class="signup-call">¿No tienes una cuenta? <a href="#">Crea una</a></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="page home-page hidden"> 
+        <header class="main-header">
+            <div class="logo">
+                <img src="DOGOPEDIA.png" alt="dogopedia logo">
+            </div>
+            <nav class="nav-links">
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Mapa</a></li>
+                    <li><a href="#">Favoritas</a></li>
+                    <li><a href="#">Perfil</a></li>
+                </ul>
+            </nav>
+            <button class="menu-btn" aria-label="Abrir menú">☰</button>
+        </header>
+
+        <section class="hero-section">
+            <div class="hero-image">
+                <img src="dogomano.png" alt="Hot dog en mano">
+            </div>
+        </section>
+
+        <section class="location-selection">
+            <p>Selecciona la ubicación donde quieres encontrar un punto de hot dogs</p>
+            <div class="location-input">
+                <img src="location.png" alt="">
+                <select id="location-select">
+                    <option value="navojoa-son">Navojoa, Son</option>
+                    <option value="otra-ubicacion">Otra Ubicación</option>
+                </select>
+                <img src="arrow.png" alt="">
+            </div>
+        </section>
+
+        <section class="dogo-list">
+            <h2>NUESTROS HOT DOGS DISPONIBLES</h2>
+            <div class="dogo-grid">
+                
+                <div class="dogo-card">
+                    <h3>HOT DOGS  CITYWALK H...</h3>
+                    <div class="card-img-wrap">
+                        <img src="HOT DOGS  CITYWALK h....png" alt="">
+                    </div>
+                    <div class="card-location">
+                        <img src="location.png" alt="">
+                    </div>
+                    <p class="addr">Patriciano, entre Gonzáles y
+Mar de Cortés</p>
+                    <button class="btn info-btn">Ver menú</button>
+                </div>
+                
+                <div class="dogo-card">
+                    <h3>HOT DOGS CARRERAS NYC</h3>
+                    <div class="card-img-wrap">
+                        <img src="HOT DOGS CARRERAS NYC.png" alt="">
+                    </div>
+                    <div class="card-location">
+                        <img src="location.png" alt="">
+                    </div>
+                    <p class="addr">Consti, entre Pachuca y Margaria de los Ángeles</p>
+                    <button class="btn info-btn">Ver menú</button>
+                </div>
+                
+                <div class="dogo-card">
+                    <h3>HOT DOGS EL RIKO</h3>
+                    <div class="card-img-wrap">
+                        <img src="HOT DOGS EL RIKO.png" alt="">
+                    </div>
+                    <div class="card-location">
+                        <img src="location.png" alt="">
+                    </div>
+                    <p class="addr">Escutia, entre Galeana y Madero Sánchez</p>
+                    <button class="btn info-btn">Ver menú</button>
+                </div>
+                
+                <div class="dogo-card">
+                    <h3>HOT DOGS  TRIKE</h3>
+                    <div class="card-img-wrap">
+                        <img src="HOT DOGS  TRIKE.png" alt="">
+                    </div>
+                    <div class="card-location">
+                        <img src="location.png" alt="">
+                    </div>
+                    <p class="addr">Santa María, entre Dos Puentes y Galiciense</p>
+                    <button class="btn info-btn">Ver menú</button>
+                </div>
+                
+                <div class="dogo-card">
+                    <h3>HOT DOGS Steve’s S...</h3>
+                    <div class="card-img-wrap">
+                        <img src="HOT DOGS Steve’s S....png" alt="">
+                    </div>
+                    <div class="card-location">
+                        <img src="location.png" alt="">
+                    </div>
+                    <p class="addr">Margaritas blancas, entre Morelos y Pavón</p>
+                    <button class="btn info-btn">Ver menú</button>
+                </div>
+                
+                <div class="dogo-card">
+                    <h3>HOT DOGS chihuahua</h3>
+                    <div class="card-img-wrap">
+                        <img src="HOT DOGS chihuahua.png" alt="">
+                    </div>
+                    <div class="card-location">
+                        <img src="location.png" alt="">
+                    </div>
+                    <p class="addr">Esperanza, entre Constitución y Feliciano Carranza</p>
+                    <button class="btn info-btn">Ver menú</button>
+                </div>
+            </div>
+        </section>
+
+        <button class="scroll-top-button">
+            <img src="arriba.png" alt="Ir arriba">
+        </button>
+
+        <footer class="app-footer">
+
+            <section class="redes-section">
+            <h2 class="redes-title">Dale un vistazo a nuestras redes</h2>
+            <div class="redes-list">
+                
+                <a href="#" class="social-item">
+                    <img src="facebook naranja.png" alt="" class="social-icon">
+                    <span>Dogopedia Oficial</span>
+                </a>
+
+                <a href="#" class="social-item">
+                    <img src="insta.png" alt="" class="social-icon">
+                    <span>@dogopedia_official</span>
+                </a>
+                
+                <a href="#" class="social-item">
+                    <img src="x.png" alt="" class="social-icon">
+                    <span>@dogopedia_official_x</span>
+                </a>
+                
+            </div>
+        </section>
+
+            <div class="footer-col">
+                <h4>Visita nuestras otras páginas</h4>
+                <ul>
+                    <li><a href="#">Bonelepedia</a></li>
+                    <li><a href="#">Burguerpedia</a></li>
+                    <li><a href="#">Chimipedia</a></li>
+                    <li><a href="#">Tacopedia</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Información general</h4>
+                <ul>
+                    <li><a href="#">Terminos y condiciones</a></li>
+                    <li><a href="#">Contacto</a></li>
+                    <li><a href="#">Privacidad</a></li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const loginPage = document.querySelector('.login-page');
+            const homePage = document.querySelector('.home-page');
+            const loginButton = document.querySelector('.login-form .login-btn');
+
+            loginButton.addEventListener('click', (e) => {
+                e.preventDefault();
+                loginPage.classList.add('hidden');
+                homePage.classList.remove('hidden');
+            });
+        });
+    </script>
+</body>
+</html>
